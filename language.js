@@ -1,0 +1,1 @@
+const languageButton=document.querySelector('.language-toggle');languageButton.addEventListener('click',()=>{const target=new URL(languageButton.dataset.target,location.href);target.hash=location.hash;target.search=location.search;location.assign(target.href)});
